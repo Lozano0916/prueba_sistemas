@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2022-03-22
+    See: https://launchpad.net/bugs/1966004
+  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulario</title>
+    <style type="text/css" media="screen">
+	*{
+	    
+	}
+	.formulario{
+	   padding:10px;
+	   border:1px solid black;
+	   border-radius:5px;
+	   text-decoration:none;
+	   margin: 0 auto;
+	   background-color:#7cb8ff;
+	}
+	.formulario input{
+	   border:1px solid white;
+	   border-radius:4px;
+	   text-decoration:none;
+	}
+	.formulario label{
+	   margin-bottom:10px;
+	   text-decoration:none;
+	   padding:5px;
+	}
+	.formulario li{
+	   margin-bottom:10px;
+	   text-decoration:none;
+	   list-style:none;
+	}
+    </style>
+  </head>
+  <body>
+       
+	<h1>Esta es mi pagina web</h1> 
+
+<h3>Ingresa tus datos aca:</h3>
+<form action="procesar_formulario.php" method="post" class="formulario">
+  <ul>
+    <li>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="name">Apellido:</label>
+      <input type="text" id="name" name="user_lastname" />
+    </li>
+     <li>
+      <label for="name">Año de nacimiento:</label>
+      <input type="number" id="name" name="user_birthyear" />
+    </li>
+
+    <li>
+      <label for="mail">Correo electrónico:</label>
+      <input type="email" id="mail" name="user_mail" />
+    </li>
+    <li>
+      <label for="msg">Mensaje:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </li>
+    <li>
+	<button type="button" id="enviarBtn" class="boton-estilo">Enviar</button>
+    </li>
+  </ul>
+</form>         
+                           
+  </body>
+</html>
